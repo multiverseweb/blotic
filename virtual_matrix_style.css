@@ -1,0 +1,391 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: linear-gradient(#000000,#000000);
+    background-attachment: fixed;
+    font-family:sans-serif;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -100;
+    background-image: url(background.svg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    background-color: #d2000000;
+    backdrop-filter: blur(7px);
+    z-index: 10;
+    transition: top 0.7s;
+}
+.logo{
+    height: 70px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+    object-fit: cover;
+    object-position: 0%;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+#logo2{
+    width: 60px;
+    opacity: 1;
+}
+.logo:hover{
+    opacity: 1;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width: calc(100vw - 870px);
+    right: 0;
+    padding-top: 35px;
+}
+.navbar li a{
+    text-decoration: none;
+    color:white;
+    padding:15px 30px 15px 30px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    background-image: radial-gradient(#602ea600,#602ea600,#602ea600,#602ea600);
+    border: 1px solid #cc75db00;
+}
+.navbar li a:hover{
+    background-image: radial-gradient(#602ea600,#602ea600,#cc75db2b,#cc75db);
+    border: 1px solid #cc75db;
+}
+.stack{
+    height: 30px;
+    width: 33px;
+    margin-top: -7px;
+    transition-duration: 0.2s;
+    filter: brightness(0) invert(0.7) saturate(1) hue-rotate(0deg);
+    display: none;
+    z-index: 1000;
+}
+.stack:hover{
+    filter: brightness(1) invert(0) saturate(10) hue-rotate(80deg);
+}
+#hide{
+    filter: brightness(1) invert(0) saturate(10) hue-rotate(80deg);
+    display: none;
+}
+.ball{
+    position: absolute;
+    top:8vh;
+    left:50vw;
+}
+.main{
+    position: absolute;
+    top:22vh;
+    left:50px;
+    font-weight:550;
+}
+.man{
+    bottom: 0px;
+    right: 0px;
+    height: 700px;
+    position:fixed;
+}
+.heading{
+    font-size: 4rem;
+    background: -webkit-linear-gradient(50deg, #CC51D6, #5a68e89a,#E1B1FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.small{
+    font-size: 2rem;
+    margin-left: 1rem;
+    background: -webkit-linear-gradient(30deg, #2240E1, #5a68e899,#9C53F9,#9C53F9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.register{
+    display: block;
+    padding:15px 30px 15px 30px;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 1px solid #CC75DB;
+    color:white;
+    font-weight: 600;
+    font-size: 1.02rem;
+    background-image: radial-gradient(#602EA6,#7851af,#CC75DB);
+    background-position: 50% 50%;
+    box-shadow: 5px -7px 30px #CC75DB;
+}
+#fifa{
+    margin-top: 20px;
+}
+.register a{
+    text-decoration: none;
+}
+.register:hover{
+    transition: all 1s ease-in-out;
+    transition-duration: 1s;
+    transform-origin: 0% 0%;
+    background-image: linear-gradient(to right,rgb(137, 55, 138),#602EA6);
+}
+.blank{
+    background-color: #00000000;
+    width: 100.5vw;
+    margin-left: -0.25vw;
+    height: 50vh;
+    border: 1px solid #CC75DB;
+    border-radius: 20px;
+    position: fixed;
+    top:78vh;
+    z-index: -1;
+    box-shadow: 0px 0px 10px #CC75DB;
+}
+.old{
+    margin-top: 130px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #3d476d;
+    width: 304px;
+    color: white;
+    padding: 20px;
+    background-image: linear-gradient(#000000 40%,#000000,#313A5B);
+}
+.event{
+    border-radius: 10px;
+}
+.design{
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(to right,#00000000,#CC75DB,#ffffff,#CC75DB,#CC75DB,#00000000,#00000000,#00000000,#00000000,#00000000,#00000000);
+}
+.shadow{
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    box-shadow: -5px 0px 10px #CC75DB, -5px 0px 10px #CC75DB, -5px 0px 10px #CC75DB, -5px 0px 10px #CC75DB, -5px 0px 10px #CC75DB;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: -2px;
+    margin-left: 30px;
+}
+.bhartiyam{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.851);
+    font-weight: 100;
+}
+.info{
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.562);
+    font-weight: 100;
+    width: 300px;
+    word-wrap: break-word;
+}
+.watch{
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+    display: flex;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(#48506e 50%,#313A5B 50%);
+}
+.watch p{
+    margin-top: 2px;
+}
+.play{
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    filter: invert(1);
+}
+.r{
+    position: absolute;
+    border-radius: 3px;
+    left:44%;
+    margin-top: -30px;
+    height:25px;
+    width: 39px;
+    background-color: #C977D6;
+    border-right: 2px solid rgb(243, 205, 255);
+    border-left: 2px solid rgb(243, 205, 255);
+}
+.gradient{
+    position: absolute;
+    border-radius: 50%;
+    left:44.5%;
+    margin-top: -36px;
+    height:35px;
+    width: 35px;
+    background-image: radial-gradient(#4900aeb2,#5f3796dc,#C977D6,#C977D6);
+}
+#r2{
+    transform: rotate(120deg);
+}
+#r3{
+    transform: rotate(240deg);
+}
+.sparkle{
+    height: 25px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    filter:invert(1);
+}
+
+@media (max-width:900px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        animation-name: pan;
+        animation-duration: 150s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes pan{
+        0%{
+            background-position: 50%;
+        }
+        25%{
+            background-position: 100%;
+        }
+        50%{
+            background-position: 50%;
+        }
+        75%{
+            background-position: 25%;
+        }
+        100%{
+            background-position: 50%;
+        }
+    }
+    header{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color: #d2000000;
+        backdrop-filter: blur(7px);
+        z-index: 10;
+    }
+    .logo{
+        height: 45px;
+        margin-top: 20px;
+        margin-left: 20px;
+        z-index: 1000;
+    }
+    #logo2{
+        width: 40px;
+    }
+    
+    .navbar{
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        padding-top: 70px;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        background-color: #000000;
+        backdrop-filter: blur(7px);
+        z-index: 100;
+    }
+    .navbar li{
+        width: 100vw;
+        margin-left: 50%;
+        transform: translate(-50%);
+        padding:35px 0px 35px 0px;
+    }
+    .navbar li a{
+        border-radius: 10px;
+        transition-duration: 0.2s;
+        background-image: radial-gradient(#602ea600,#602ea600,#602ea600,#602ea600);
+        border: 1px solid #cc75db00;
+    }
+    .navbar li a:hover{
+        background-image: radial-gradient(#602ea600,#602ea600,#cc75db2b,#cc75db);
+        border: 1px solid #cc75db;
+    }
+    .stack{
+        display: block;
+        height: 30px;
+        width: 33px;
+        position: absolute;
+        right:30px;
+        margin-top: 25px;
+        transition-duration: 0.2s;
+        filter: brightness(0) invert(0.7) saturate(1) hue-rotate(0deg);
+    }
+    .ball{
+        position: absolute;
+        top:2vh;
+        left:50vw;
+        transform: scale(0.6);
+        width: 60vw;
+        object-fit: contain;
+    }
+    .main{
+        width: 70vw;
+        word-wrap: break-word;
+        position: absolute;
+        top:15vh;
+        left:20px;
+    }
+    .man{
+        display: none;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .small{
+        font-size: 1.3rem;
+        margin-left: 0rem;
+    }
+    .register{
+        padding:10px 20px 10px 20px;
+        margin-top: 50px;
+        font-weight: 540;
+        font-size: 1rem;
+    }
+    .blank{
+        top:80vh;
+    }
+    .old{
+        margin-top: 70px;
+        width: 80vw;
+    }
+    .event{
+        width: 80vw;
+    }
+    .info{
+        font-size: 0.7rem;
+    }
+    
+    .r{
+        left:109%;
+    }
+    .gradient{
+        left:110%;
+        }
+}
+
+.watchnow{
+    text-decoration: none;
+}
