@@ -132,9 +132,10 @@ header{
 #fifa{
     margin-top: 20px;
 }
-.register a{
+a{
     text-decoration: none;
 }
+
 .register:hover{
     transition: all 1s ease-in-out;
     transition-duration: 1s;
