@@ -19,6 +19,9 @@ a{
     width: 100vw;
     position: fixed;
     z-index: -100;
+    background-image: url(../images/background.svg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 header{
     position: fixed;
@@ -92,14 +95,10 @@ header{
     left:50vw;
 }
 .main{
-    display: flex;
-    justify-content: space-between;
-    width: 70vw;
     position: absolute;
-    top:12vh;
+    top:22vh;
     left:50px;
     font-weight:550;
-    margin-left: 15vw;
 }
 .man{
     bottom: 0px;
@@ -112,6 +111,7 @@ header{
     background: -webkit-linear-gradient(50deg, #CC51D6, #5a68e89a,#E1B1FF);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 .small{
     font-size: 2rem;
@@ -255,11 +255,6 @@ header{
     body{
         overflow-x: hidden;
     }
-    .main{
-        flex-direction: column;
-        margin-left: 0px;
-        width: calc(100vw - 20px);
-    }
     .container{
         height: 100vh;
         width: 100vw;
@@ -362,10 +357,10 @@ header{
         display: none;
     }
     .heading{
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
     .small{
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-left: 0rem;
     }
     .register{
